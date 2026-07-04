@@ -3,42 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PANCHA NANDI TOUR'S AND TRAVELS</title>
+<title>PANCHA NANDI TOUR'S AND TRAVELS | Bangalore</title>
 
 <style>
 body{
-    font-family: Arial, sans-serif;
+    font-family:Arial,sans-serif;
     margin:0;
     background:#f5f5f5;
 }
 header{
-    background:#222;
+    background:#1f2937;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:30px;
 }
 .section{
     background:white;
     margin:15px;
     padding:20px;
     border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
 }
 table{
     width:100%;
     border-collapse:collapse;
 }
 th,td{
-    border:1px solid #ccc;
+    border:1px solid #ddd;
     padding:10px;
 }
 .button{
     display:inline-block;
+    padding:12px 18px;
+    margin:5px;
     background:#25D366;
     color:white;
-    padding:10px 15px;
     text-decoration:none;
     border-radius:5px;
-    margin:5px;
+}
+.call{
+    background:#2563eb;
+}
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin:5px 0;
 }
 </style>
 </head>
@@ -47,27 +62,42 @@ th,td{
 
 <header>
     <h1>🐂 PANCHA NANDI TOUR'S AND TRAVELS</h1>
-    <p>Bangalore, Karnataka</p>
-    <p>📞 9035961957</p>
+    <p>Trusted Tours & Travels Service in Bangalore, Karnataka</p>
+    <p>📞 +91 9035961957</p>
+
+    <a class="button" href="https://wa.me/919035961957">WhatsApp</a>
+    <a class="button call" href="tel:9035961957">Call Now</a>
 </header>
+
+<div class="section">
+    <h2>About Us</h2>
+    <p>
+    PANCHA NANDI TOUR'S AND TRAVELS provides reliable and affordable
+    travel services across Karnataka and India. We specialize in
+    airport transfers, outstation trips, family tours, temple tours,
+    local sightseeing, and corporate travel services.
+    </p>
+</div>
 
 <div class="section">
     <h2>Our Services</h2>
     <ul>
+        <li>Airport Pickup & Drop</li>
         <li>Outstation Cabs</li>
-        <li>Local Business Cabs</li>
+        <li>Local Taxi Service</li>
         <li>Family Tours</li>
         <li>Temple Tours</li>
-        <li>Airport Cabs</li>
+        <li>Corporate Travel</li>
+        <li>Tourist Vehicle Rental</li>
     </ul>
 </div>
 
 <div class="section">
-    <h2>Vehicle KM Price List</h2>
+    <h2>Vehicle Price List</h2>
     <table>
         <tr>
             <th>Vehicle</th>
-            <th>Price</th>
+            <th>Rate</th>
         </tr>
         <tr><td>Innova Crysta</td><td>₹19/km</td></tr>
         <tr><td>Innova Hycross</td><td>₹22/km</td></tr>
@@ -82,40 +112,47 @@ th,td{
 </div>
 
 <div class="section">
-    <h2>Vehicle Gallery</h2>
-    <p>Vehicle photos can be added here.</p>
-    <input type="file" multiple>
+    <h2>Business Information</h2>
+    <p><b>Business Name:</b> PANCHA NANDI TOUR'S AND TRAVELS</p>
+    <p><b>Location:</b> Bangalore, Karnataka, India</p>
+    <p><b>Phone:</b> +91 9035961957</p>
+    <p><b>WhatsApp:</b> +91 9035961957</p>
+    <p><b>Business Hours:</b> Open 24 Hours</p>
 </div>
 
 <div class="section">
-    <h2>Contact Us</h2>
-    <p>📞 Phone: 9035961957</p>
-    <p>📍 Bangalore, Karnataka</p>
-
-    <a class="button" href="tel:9035961957">
-        Call Now
-    </a>
-
-    <a class="button" href="https://wa.me/919035961957">
-        WhatsApp
-    </a>
+    <h2>Request a Booking</h2>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="tel" placeholder="Phone Number">
+        <input type="text" placeholder="Pickup Location">
+        <input type="text" placeholder="Destination">
+        <textarea placeholder="Travel Details"></textarea>
+        <button type="submit">Submit Enquiry</button>
+    </form>
 </div>
 
 <div class="section">
-    <h2>Authority Login</h2>
-    <button onclick="login()">Login</button>
+    <h2>Privacy Policy</h2>
+    <p>
+    We collect customer information only for booking and communication
+    purposes. We do not sell or share personal information with third parties.
+    </p>
 </div>
 
-<script>
-function login() {
-    var pass = prompt("Enter Password");
-    if(pass=="1116"){
-        window.location.href="dashboard.html";
-    } else {
-        alert("Wrong Password");
-    }
-}
-</script>
+<div class="section">
+    <h2>Terms & Conditions</h2>
+    <p>
+    Vehicle availability, pricing, and booking confirmations are subject
+    to operational requirements. Additional charges may apply for tolls,
+    parking, and interstate permits.
+    </p>
+</div>
+
+<footer>
+    <p>© 2026 PANCHA NANDI TOUR'S AND TRAVELS</p>
+    <p>Bangalore, Karnataka, India</p>
+</footer>
 
 </body>
 </html>
