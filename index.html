@@ -156,7 +156,18 @@ and tourist vehicle rental services.
 <!-- ✅ WHATSAPP BOOKING SECTION -->
 <div class="card">
 <h2>Book Your Trip</h2>
+<p><b>Fare Calculator (Approx)</b></p>
 
+<select id="vehicle">
+    <option value="13">Etios / Sedan (₹13/km)</option>
+    <option value="16">Ertiga (₹16/km)</option>
+    <option value="19">Innova Crysta (₹19/km)</option>
+    <option value="22">Innova Hycross (₹22/km)</option>
+</select>
+
+<input type="number" id="km" placeholder="Enter Distance (KM)">
+
+<p id="result"><b>Total Fare: ₹0</b></p>
  <a class="btn call" target="_blank"
 href="https://www.google.com/maps/search/?api=1&query=Bangalore">
 📍 Open Google Maps
@@ -226,7 +237,24 @@ Vehicle availability is subject to confirmation.
 <footer>
 <p>© 2026 PANCHA NANDI TOUR'S AND TRAVELS</p>
 </footer>
+<script>
+document.getElementById("km").addEventListener("input", calculateFare);
+document.getElementById("vehicle").addEventListener("change", calculateFare);
 
+function calculateFare(){
+    let km = document.getElementById("km").value;
+    let rate = document.getElementById("vehicle").value;
+
+    let total = km * rate;
+
+    if(!km){
+        total = 0;
+    }
+
+    document.getElementById("result").innerHTML =
+    "<b>Total Fare: ₹" + total + "</b>";
+}
+</script>
 </body>
 </html>
 <a href="https://wa.me/919035961957?text=Hello%20I%20want%20to%20book%20a%20trip"
