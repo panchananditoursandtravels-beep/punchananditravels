@@ -1,55 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PANCHA NANDI TOUR'S AND TRAVELS</title>
+<title>PANCHA NANDI TOUR'S AND TRAVELS | Bangalore</title>
 
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 body{
-font-family:Arial,sans-serif;
-margin:0;
-background:#f5f5f5;
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
 }
 header{
-background:#1f2937;
-color:white;
-padding:30px;
-text-align:center;
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:30px;
 }
-.section{
-background:white;
-margin:15px;
-padding:20px;
-border-radius:10px;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
+header h1{
+    font-size:32px;
+}
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 table{
-width:100%;
-border-collapse:collapse;
+    width:100%;
+    border-collapse:collapse;
 }
-th,td{
-border:1px solid #ddd;
-padding:10px;
-text-align:left;
+table th,table td{
+    border:1px solid #ddd;
+    padding:10px;
 }
 .btn{
-display:inline-block;
-padding:10px 15px;
-margin:5px;
-background:#25D366;
-color:white;
-text-decoration:none;
-border-radius:5px;
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    padding:12px 18px;
+    text-decoration:none;
+    border-radius:5px;
+    margin:5px;
 }
 .call{
-background:#2563eb;
+    background:#2563eb;
+}
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+}
+button{
+    padding:12px 20px;
 }
 footer{
-background:#111827;
-color:white;
-text-align:center;
-padding:20px;
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 </style>
 </head>
@@ -57,42 +76,49 @@ padding:20px;
 <body>
 
 <header>
-<h1>🐂 PANCHA NANDI TOUR'S AND TRAVELS</h1>
-<p>Bangalore, Karnataka</p>
-<p>📞 +91 9035961957</p>
+    <h1>🐂 PANCHA NANDI TOUR'S AND TRAVELS</h1>
+    <p>Bangalore, Karnataka</p>
+    <p>📞 +91 9035961957</p>
 
-<a class="btn" href="https://wa.me/919035961957">WhatsApp</a>
-<a class="btn call" href="tel:9035961957">Call Now</a>
+    <a class="btn" href="https://wa.me/919035961957">WhatsApp</a>
+    <a class="btn call" href="tel:9035961957">Call Now</a>
 </header>
 
-<div class="section">
+<div class="container">
+
+<div class="card">
 <h2>About Us</h2>
 <p>
-PANCHA NANDI TOUR'S AND TRAVELS provides reliable travel services across Karnataka and India.
-We offer airport transfers, outstation trips, family tours, temple tours, local sightseeing,
+PANCHA NANDI TOUR'S AND TRAVELS provides reliable and affordable
+travel services across Karnataka and India.
+We specialize in airport transfers, outstation trips,
+family tours, temple tours, local sightseeing,
 and tourist vehicle rental services.
 </p>
 </div>
 
-<div class="section">
+<div class="card">
 <h2>Our Services</h2>
 <ul>
 <li>Airport Pickup & Drop</li>
-<li>Outstation Cabs</li>
-<li>Local Business Cab</li>
+<li>Outstation Taxi</li>
+<li>Local Cab Service</li>
 <li>Family Tours</li>
 <li>Temple Tours</li>
+<li>Corporate Travel</li>
 <li>Tourist Vehicle Rental</li>
 </ul>
 </div>
 
-<div class="section">
-<h2>Vehicle Price List</h2>
+<div class="card">
+<h2>Vehicle KM Price List</h2>
+
 <table>
 <tr>
 <th>Vehicle</th>
 <th>Rate</th>
 </tr>
+
 <tr><td>Innova Crysta</td><td>₹19/km</td></tr>
 <tr><td>Innova Hycross</td><td>₹22/km</td></tr>
 <tr><td>Etios</td><td>₹13/km</td></tr>
@@ -105,32 +131,83 @@ and tourist vehicle rental services.
 </table>
 </div>
 
-<div class="section">
-<h2>Contact Us</h2>
-<p><b>Phone:</b> +91 9035961957</p>
-<p><b>WhatsApp:</b> +91 9035961957</p>
+<div class="card">
+<h2>Vehicle Gallery</h2>
+
+<p>🚗 Innova Crysta</p>
+<p>🚗 Innova Hycross</p>
+<p>🚗 Etios</p>
+<p>🚗 Ertiga</p>
+<p>🚗 Sedan</p>
+<p>🚌 Tempo Traveller</p>
+<p>🚌 Force Urbania</p>
+<p>🚌 Mini Bus</p>
+<p>🚌 50 Seater Bus</p>
+
+</div>
+
+<div class="card">
+<h2>Book Your Trip</h2>
+
+<input type="text" placeholder="Your Name">
+
+<input type="tel" placeholder="Phone Number">
+
+<input type="text" placeholder="Pickup Location">
+
+<input type="text" placeholder="Destination">
+
+<textarea placeholder="Trip Details"></textarea>
+
+<button>Send Enquiry</button>
+
+</div>
+
+<div class="card">
+<h2>Business Information</h2>
+
+<p><b>Business Name:</b> PANCHA NANDI TOUR'S AND TRAVELS</p>
+
 <p><b>Location:</b> Bangalore, Karnataka</p>
+
+<p><b>Phone:</b> +91 9035961957</p>
+
+<p><b>WhatsApp:</b> +91 9035961957</p>
+
 <p><b>Business Hours:</b> Open 24 Hours</p>
+
 </div>
 
-<div class="section">
+<div class="card">
 <h2>Privacy Policy</h2>
+
 <p>
-We collect customer information only for booking and communication purposes.
-We do not sell customer information to third parties.
+We collect customer information only for booking
+and communication purposes.
+We do not sell or share customer information.
 </p>
+
 </div>
 
-<div class="section">
+<div class="card">
 <h2>Terms & Conditions</h2>
+
 <p>
-Vehicle availability and prices are subject to confirmation.
-Additional charges may apply for tolls, parking, and interstate permits.
+Prices may vary depending on route,
+toll, parking and state permits.
+Vehicle availability is subject to confirmation.
 </p>
+
+</div>
+
 </div>
 
 <footer>
-<p>© 2026 PANCHA NANDI TOUR'S AND TRAVELS</p>
+
+<p>
+© 2026 PANCHA NANDI TOUR'S AND TRAVELS
+</p>
+
 </footer>
 
 </body>
